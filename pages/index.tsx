@@ -22,12 +22,10 @@ const Party: NextPage = () => {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Brightly</title>
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/responsive.css" />
         <script src="/js/jquery.min.js"></script>
-        <script src="./js/jquery.marquee.min.js"></script>
-        <script src="./js/masonry.pkgd.min.js"></script>
-        <script src="./js/owl.carousel.min.js"></script>
+        <script src="/js/jquery.marquee.min.js"></script>
+        <script src="/js/masonry.pkgd.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
       </Head>
       <header>
         <div className="content">
