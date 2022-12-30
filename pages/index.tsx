@@ -1,5 +1,5 @@
 import "../styles/Home.module.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import type { NextPage } from "next";
 import { useWallet, useWalletList, useAssets, useLovelace } from '@meshsdk/react';
 import React from 'react';
@@ -10,8 +10,20 @@ const Party: NextPage = () => {
   const { connected, wallet, connect, disconnect } = useWallet();
   const walletList = useWalletList()
   const assets = useAssets()
-  const [loading, setLoading] = useState<boolean>(false);
   const lovelace: any = useLovelace();
+
+  useEffect(() => {
+    const checkPolicyIdAssets = async () => {
+      const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
+      if (!assets.length) disconnect()
+
+    }
+
+    if (connected) {
+      checkPolicyIdAssets()
+    }
+
+  }, [connected])
 
 
   return (
