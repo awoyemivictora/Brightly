@@ -244,17 +244,14 @@ const Party: NextPage = () => {
                     </code>
                   </pre>
                 }
-                <button
-                  onClick={disconnect}
-                  style={{
-                    padding: "1rem",
-                    marginTop: "1rem",
-                    backgroundColor: "black",
-                    cursor: "pointer"
-                  }}
-                >
-                  <h3>Disconnect Your Wallet</h3>
-                </button>
+                <div className="disconnect">
+                  <button
+                    onClick={disconnect}
+                    className="disconnectbtn"
+                  >
+                    Disconnect Your Wallet
+                  </button>
+                </div>
               </>
             )}
 
