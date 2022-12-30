@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import '../styles/main.css'
+import '../styles/responsive.css'
 import type { AppProps } from "next/app";
 import { MeshProvider } from "@meshsdk/react";
 
