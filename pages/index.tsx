@@ -1,38 +1,24 @@
+import "../styles/Home.module.css";
 import { useState } from "react";
 import type { NextPage } from "next";
-import { useWallet } from '@meshsdk/react';
-import { CardanoWallet } from '@meshsdk/react';
-import { BrowserWallet } from '@meshsdk/core';
+import { useWallet, useWalletList, useAssets, useLovelace } from '@meshsdk/react';
 import React from 'react';
-//import './App.css';
 import Head from 'next/head'
 import Script from 'next/script'
 
 const Party: NextPage = () => {
-
-  const { connected, wallet } = useWallet();
-  const [assets, setAssets] = useState<null | any>(null);
+  const { connected, wallet, connect, } = useWallet();
+  const walletList = useWalletList()
+  const assets = useAssets()
   const [loading, setLoading] = useState<boolean>(false);
+  const lovelace: any = useLovelace();
 
-  
-
-  async function getAssets() {
-    if (wallet) {
-      setLoading(true);
-      const _assets = await wallet.getAssets();
-      setAssets(_assets);
-      setLoading(false);
-    }
-  }
 
   return (
-    <>
+    <div className="page">
       <Head>
         <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Brightly</title>
         <link rel="stylesheet" href="./css/owl.carousel.min.css" />
@@ -232,46 +218,33 @@ const Party: NextPage = () => {
       <div className={`pop_up pop_wallet ${!connected ? 'active' : ''}`} id="myModal" role="dialog">
         {/* <a href="#" className="close" /> */}
         <div className="pop_content">
-          <br></br><br></br>
-          <h2>Connect your wallet</h2>
-          <p className="desc">to get access to our incredible Party Favorz</p>
-          <ul>
-            <li>
-              <div>
-                {/* <h1>Connect Wallet</h1> */}
-                <CardanoWallet />
-                {connected && (
-                  <>
-                    {/* <h3><center>Your Wallet Assets</center></h3> */}
-                    {assets ? (
-                      <pre>
-                        <code className="language-js">
-                          {JSON.stringify(assets, null, 2)}
-                        </code>
-                      </pre>
-                    ) : (
-                      <button
-                        type="button"
-                        onClick={() => getAssets()}
-                        disabled={loading}
-                        style={{
-                          margin: "12px",
-                          backgroundColor: loading ? "black" : "black",
-                        }}
-                      >
-                        {/* <h3>Disconnect Your Wallet</h3> */}
-                      </button>
+          {!connected ?
+            <>
+              <h2>Connect your wallet</h2>
+              <p className="desc">to get access to our incredible Party Favorz</p>
+              <ul>
+                {
+                  walletList?.map(wl => (
+                    <li onClick={() => connect(wl.name)}><a href="#"><span><img src={wl.icon} alt={wl.icon} style={{ width: '100%', maxWidth: '35px' }} /></span>{wl.name}</a></li>
 
-                    )}
-                  </>
-                )}
-              </div></li>
+                  ))
+                }
+              </ul>
+            </>
+            : (
+              <>
+                <h2>Your Wallet Assets</h2>
+                <p style={{ color: "black" }}>You have <b>₳ {parseInt(lovelace) / 1000000}</b>.</p>
+                {
+                  assets && <pre>
+                    <code style={{ color: 'black' }} className="language-js">
+                      {JSON.stringify(assets, null, 2)}
+                    </code>
+                  </pre>
+                }
+              </>
+            )}
 
-
-
-
-
-          </ul>
         </div>
       </div>
       <div className={`pop_up_bg ${!connected ? 'active' : ''}`} />
@@ -627,7 +600,7 @@ const Party: NextPage = () => {
       {
         connected && <Script src="./js/connected.js"></Script>
       }
-    </>
+    </div>
   )
 }
 
