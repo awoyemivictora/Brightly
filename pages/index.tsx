@@ -21,8 +21,13 @@ const Party: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Brightly</title>
-        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-        <script src="./js/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/responsive.css" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="./js/jquery.marquee.min.js"></script>
+        <script src="./js/masonry.pkgd.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
       </Head>
       <header>
         <div className="content">
@@ -591,10 +596,6 @@ const Party: NextPage = () => {
         </div>
       </div>
 
-     
-      <Script src="./js/jquery.marquee.min.js"></Script>
-      <Script src="./js/masonry.pkgd.min.js"></Script>
-      <Script src="./js/owl.carousel.min.js"></Script>
       <Script src="./js/main.js"></Script>
       {
         connected && <Script src="./js/connected.js"></Script>
