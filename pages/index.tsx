@@ -22,8 +22,6 @@ const Party: NextPage = () => {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Brightly</title>
         <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/responsive.css" />
       </Head>
       <header>
         <div className="content">
@@ -225,7 +223,7 @@ const Party: NextPage = () => {
               <ul>
                 {
                   walletList?.map(wl => (
-                    <li onClick={() => connect(wl.name)}><a href="#"><span><img src={wl.icon} alt={wl.icon} style={{ width: '100%', maxWidth: '35px' }} /></span>{wl.name}</a></li>
+                    <li key={wl.name} onClick={() => connect(wl.name)}><a href="#"><span><img src={wl.icon} alt={wl.icon} style={{ width: '100%', maxWidth: '35px' }} /></span>{wl.name}</a></li>
 
                   ))
                 }
