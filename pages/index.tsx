@@ -7,7 +7,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 const Party: NextPage = () => {
-  const { connected, wallet, connect, } = useWallet();
+  const { connected, wallet, connect, disconnect } = useWallet();
   const walletList = useWalletList()
   const assets = useAssets()
   const [loading, setLoading] = useState<boolean>(false);
@@ -23,9 +23,9 @@ const Party: NextPage = () => {
         <title>Brightly</title>
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
         <script src="/js/jquery.min.js"></script>
-        <script src="/js/jquery.marquee.min.js"></script>
-        <script src="/js/masonry.pkgd.min.js"></script>
-        <script src="/js/owl.carousel.min.js"></script>
+        <script src="./js/jquery.marquee.min.js"></script>
+        <script src="./js/masonry.pkgd.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
       </Head>
       <header>
         <div className="content">
@@ -244,6 +244,17 @@ const Party: NextPage = () => {
                     </code>
                   </pre>
                 }
+                <button
+                  onClick={disconnect}
+                  style={{
+                    padding: "1rem",
+                    marginTop: "1rem",
+                    backgroundColor: "black",
+                    cursor: "pointer"
+                  }}
+                >
+                  <h3>Disconnect Your Wallet</h3>
+                </button>
               </>
             )}
 
