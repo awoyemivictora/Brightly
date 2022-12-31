@@ -19,8 +19,7 @@ const Party: NextPage = () => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
       setHasPolicyIdAssetsChecked(true)
-      setHasPolicyIdAssets(true)
-      
+
       if (!assets.length) {
         return disconnect()
       }
@@ -143,6 +142,9 @@ const Party: NextPage = () => {
                 <p className="big">Classpass</p>
               </div>
             </div>
+
+{/*ITEMS STARTS HERE YOU CAN DUPLICATE THE DIV THAT HAS THE item CLASSNAME */}
+
             <div className="item item_height2 smile " data-id={1}>
               <div className="img">
                 <img src="./img/favorz_2.png" alt="" />
@@ -242,6 +244,7 @@ const Party: NextPage = () => {
                 <img src="./img/favorz_6.png" alt="" />
               </div>
             </div>
+            {/*ITEMS ENDS */}
           </div>
           <a href="#" className="more">
             see more
