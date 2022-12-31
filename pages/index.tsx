@@ -1,5 +1,5 @@
 import "../styles/Home.module.css";
-import { useState,useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import { useWallet, useWalletList, useAssets, useLovelace } from '@meshsdk/react';
 import React from 'react';
@@ -10,13 +10,20 @@ const Party: NextPage = () => {
   const { connected, wallet, connect, disconnect } = useWallet();
   const walletList = useWalletList()
   const assets = useAssets()
+  const [hasPolicyIdAssets, setHasPolicyIdAssets] = useState(false);
+  const [hasPolicyIdAssetsChecked, setHasPolicyIdAssetsChecked] = useState(false);
   const lovelace: any = useLovelace();
+
 
   useEffect(() => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
-      if (!assets.length) disconnect()
+      setHasPolicyIdAssetsChecked(true)
 
+      if (!assets.length) {
+        return disconnect()
+      }
+      setHasPolicyIdAssets(true)
     }
 
     if (connected) {
@@ -26,6 +33,12 @@ const Party: NextPage = () => {
   }, [connected])
 
 
+  const handleDisconnect = () => {
+    disconnect()
+    setHasPolicyIdAssetsChecked(false)
+    setHasPolicyIdAssets(false)
+  }
+
   return (
     <div className="page">
       <Head>
@@ -34,10 +47,10 @@ const Party: NextPage = () => {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Brightly</title>
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-        <script src="/js/jquery.min.js"></script>
-        <script src="./js/jquery.marquee.min.js"></script>
-        <script src="./js/masonry.pkgd.min.js"></script>
-        <script src="./js/owl.carousel.min.js"></script>
+        <script defer src="/js/jquery.min.js"></script>
+        <script defer src="/js/jquery.marquee.min.js"></script>
+        <script defer src="/js/masonry.pkgd.min.js"></script>
+        <script defer src="/js/owl.carousel.min.js"></script>
       </Head>
       <header>
         <div className="content">
@@ -162,6 +175,72 @@ const Party: NextPage = () => {
                 <img src="./img/favorz_6.png" alt="" />
               </div>
             </div>
+            <div className="item item_height2 smile " data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_2.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Snag a snack, enjoy a show</p>
+                <p className="big">Apple TV+</p>
+              </div>
+            </div>
+            <div className="item" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_3.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">You’ll put this on everything 🥟</p>
+                <p className="big">Chili Crisp by Fly by Jing</p>
+              </div>
+            </div>
+            <div className="item item_height2 no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_4.png" alt="" />
+              </div>
+            </div>
+            <div className="item no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_5.png" alt="" />
+              </div>
+            </div>
+            <div className="item no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_6.png" alt="" />
+              </div>
+            </div>
+            <div className="item item_height2 smile " data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_2.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Snag a snack, enjoy a show</p>
+                <p className="big">Apple TV+</p>
+              </div>
+            </div>
+            <div className="item" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_3.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">You’ll put this on everything 🥟</p>
+                <p className="big">Chili Crisp by Fly by Jing</p>
+              </div>
+            </div>
+            <div className="item item_height2 no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_4.png" alt="" />
+              </div>
+            </div>
+            <div className="item no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_5.png" alt="" />
+              </div>
+            </div>
+            <div className="item no_shadow hide" data-id={1}>
+              <div className="img">
+                <img src="./img/favorz_6.png" alt="" />
+              </div>
+            </div>
           </div>
           <a href="#" className="more">
             see more
@@ -196,6 +275,53 @@ const Party: NextPage = () => {
           </div>
         </div>
       </footer>
+
+
+      <div className={`pop_up pop_wallet ${!hasPolicyIdAssets ? 'active' : ''}`} id="myModal" role="dialog">
+        {/* <a href="#" className="close" /> */}
+        <div className="pop_content">
+          {!hasPolicyIdAssets ?
+            <>
+              <h2>Connect your wallet</h2>
+              <p className="desc">to get access to our incredible Party Favorz</p>
+
+              {
+                hasPolicyIdAssetsChecked && <p className="desc no-policy-assets">You have no policy assets</p>
+              }
+
+              <ul>
+                {
+                  walletList?.map(wl => (
+                    <li key={wl.name} onClick={() => connect(wl.name)}><a href="#"><span><img src={wl.icon} alt={wl.icon} style={{ width: '100%', maxWidth: '35px' }} /></span>{wl.name}</a></li>
+
+                  ))
+                }
+              </ul>
+            </>
+            : (
+              <>
+                <h2>Your Wallet Assets</h2>
+                <p style={{ color: "black" }}>You have <b>₳ {parseInt(lovelace) / 1000000}</b>.</p>
+                {
+                  assets && <pre>
+                    <code style={{ color: 'black' }} className="language-js">
+                      {JSON.stringify(assets, null, 2)}
+                    </code>
+                  </pre>
+                }
+                <div className="disconnect">
+                  <button
+                    onClick={handleDisconnect}
+                    className="disconnectbtn"
+                  >
+                    Disconnect Your Wallet
+                  </button>
+                </div>
+              </>
+            )}
+
+        </div>
+      </div>
       <div className="pop_up pop_party" data-id={1}>
         <a href="#" className="close" />
         <div className="pop_content">
@@ -229,47 +355,7 @@ const Party: NextPage = () => {
         </div>
       </div>
 
-      <div className={`pop_up pop_wallet ${!connected ? 'active' : ''}`} id="myModal" role="dialog">
-        {/* <a href="#" className="close" /> */}
-        <div className="pop_content">
-          {!connected ?
-            <>
-              <h2>Connect your wallet</h2>
-              <p className="desc">to get access to our incredible Party Favorz</p>
-              <ul>
-                {
-                  walletList?.map(wl => (
-                    <li key={wl.name} onClick={() => connect(wl.name)}><a href="#"><span><img src={wl.icon} alt={wl.icon} style={{ width: '100%', maxWidth: '35px' }} /></span>{wl.name}</a></li>
-
-                  ))
-                }
-              </ul>
-            </>
-            : (
-              <>
-                <h2>Your Wallet Assets</h2>
-                <p style={{ color: "black" }}>You have <b>₳ {parseInt(lovelace) / 1000000}</b>.</p>
-                {
-                  assets && <pre>
-                    <code style={{ color: 'black' }} className="language-js">
-                      {JSON.stringify(assets, null, 2)}
-                    </code>
-                  </pre>
-                }
-                <div className="disconnect">
-                  <button
-                    onClick={disconnect}
-                    className="disconnectbtn"
-                  >
-                    Disconnect Your Wallet
-                  </button>
-                </div>
-              </>
-            )}
-
-        </div>
-      </div>
-      <div className={`pop_up_bg ${!connected ? 'active' : ''}`} />
+      <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} />
 
       <div id="like_button_container" />
       <div className="pop_up pop_interview" data-id={1}>
@@ -616,7 +702,7 @@ const Party: NextPage = () => {
 
       <Script src="./js/main.js"></Script>
       {
-        connected && <Script src="./js/connected.js"></Script>
+        hasPolicyIdAssets && <Script src="./js/connected.js"></Script>
       }
     </div>
   )

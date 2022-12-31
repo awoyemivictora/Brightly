@@ -1965,7 +1965,7 @@ footer .line p {
     height: 563px;
     top: calc(50% - 563px / 2);
     left: calc(50% - 960px / 2);
-    background: #000000;
+    background: #ffff;
     border-radius: 32px;
 }
 
@@ -2173,12 +2173,12 @@ footer .line p {
     height: 68px;
 }
 
-.disconnect{
+.disconnect {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
-.disconnectbtn{
+.disconnectbtn {
     font-family: "Helvetica";
     font-style: normal;
     font-weight: 700;
@@ -2484,7 +2484,9 @@ footer .line p {
     margin-bottom: 32px;
 }
 
-.pop_nft .desc span {
+.no-policy-assets {
+    color: red;
+    font-size: 1.125rem !important;
 }
 
 .pop_nft .desc_bot {
