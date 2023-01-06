@@ -1035,7 +1035,7 @@ const Party: NextPage = () => {
 
       
 
-      <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} />
+      {/* <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} /> */}
 
       <div id="like_button_container" />
       <div className="pop_up pop_interview" data-id={1}>
