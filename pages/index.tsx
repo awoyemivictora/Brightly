@@ -15,29 +15,29 @@ const Party: NextPage = () => {
   const lovelace: any = useLovelace();
 
 
-  useEffect(() => {
-    const checkPolicyIdAssets = async () => {
-      const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
-      setHasPolicyIdAssetsChecked(true)
+  // useEffect(() => {
+  //   const checkPolicyIdAssets = async () => {
+  //     const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
+  //     setHasPolicyIdAssetsChecked(true)
 
-      if (!assets.length) {
-        return disconnect()
-      }
-      setHasPolicyIdAssets(true)
-    }
+  //     if (!assets.length) {
+  //       return disconnect()
+  //     }
+  //     setHasPolicyIdAssets(true)
+  //   }
 
-    if (connected) {
-      checkPolicyIdAssets()
-    }
+  //   if (connected) {
+  //     checkPolicyIdAssets()
+  //   }
 
-  }, [connected])
+  // }, [connected])
 
 
-  const handleDisconnect = () => {
-    disconnect()
-    setHasPolicyIdAssetsChecked(false)
-    setHasPolicyIdAssets(false)
-  }
+  // const handleDisconnect = () => {
+  //   disconnect()
+  //   setHasPolicyIdAssetsChecked(false)
+  //   setHasPolicyIdAssets(false)
+  // }
 
   return (
     <div className="page">
