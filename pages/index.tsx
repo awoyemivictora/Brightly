@@ -6,7 +6,7 @@ import React from 'react';
 import Head from 'next/head'
 import Script from 'next/script'
 
-// const Party: NextPage = () => {
+const Party: NextPage = () => {
 //   const { connected, wallet, connect, disconnect } = useWallet();
 //   const walletList = useWalletList()
 //   const assets = useAssets()
@@ -1381,6 +1381,6 @@ import Script from 'next/script'
       }
     </div>
   )
-// }
+}
 
 export default Party;
