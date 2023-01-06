@@ -1021,12 +1021,13 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <iframe 
+            {/* <iframe 
             style="border:none;width:100%;" 
             height="1100px" 
             src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria" 
             name="iframe_18">
-            </iframe>
+            </iframe> */}
+            <iframe src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria" style="border:none;" title="Iframe Example" name="iframe_18"></iframe>
             <a href="#" className="claim" target="iframe_18">
               claim perk
             </a>
