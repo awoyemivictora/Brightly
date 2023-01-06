@@ -1381,6 +1381,6 @@ import Script from 'next/script'
       }
     </div>
   )
-}
+// }
 
 export default Party;
