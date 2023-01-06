@@ -6,38 +6,38 @@ import React from 'react';
 import Head from 'next/head'
 import Script from 'next/script'
 
-const Party: NextPage = () => {
-  const { connected, wallet, connect, disconnect } = useWallet();
-  const walletList = useWalletList()
-  const assets = useAssets()
-  const [hasPolicyIdAssets, setHasPolicyIdAssets] = useState(false);
-  const [hasPolicyIdAssetsChecked, setHasPolicyIdAssetsChecked] = useState(false);
-  const lovelace: any = useLovelace();
+// const Party: NextPage = () => {
+//   const { connected, wallet, connect, disconnect } = useWallet();
+//   const walletList = useWalletList()
+//   const assets = useAssets()
+//   const [hasPolicyIdAssets, setHasPolicyIdAssets] = useState(false);
+//   const [hasPolicyIdAssetsChecked, setHasPolicyIdAssetsChecked] = useState(false);
+//   const lovelace: any = useLovelace();
 
 
-  // useEffect(() => {
-  //   const checkPolicyIdAssets = async () => {
-  //     const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
-  //     setHasPolicyIdAssetsChecked(true)
+//   useEffect(() => {
+//     const checkPolicyIdAssets = async () => {
+//       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
+//       setHasPolicyIdAssetsChecked(true)
 
-  //     if (!assets.length) {
-  //       return disconnect()
-  //     }
-  //     setHasPolicyIdAssets(true)
-  //   }
+//       if (!assets.length) {
+//         return disconnect()
+//       }
+//       setHasPolicyIdAssets(true)
+//     }
 
-  //   if (connected) {
-  //     checkPolicyIdAssets()
-  //   }
+//     if (connected) {
+//       checkPolicyIdAssets()
+//     }
 
-  // }, [connected])
+//   }, [connected])
 
 
-  // const handleDisconnect = () => {
-  //   disconnect()
-  //   setHasPolicyIdAssetsChecked(false)
-  //   setHasPolicyIdAssets(false)
-  // }
+//   const handleDisconnect = () => {
+//     disconnect()
+//     setHasPolicyIdAssetsChecked(false)
+//     setHasPolicyIdAssets(false)
+//   }
 
   return (
     <div className="page">
@@ -129,10 +129,14 @@ const Party: NextPage = () => {
           </div>
         </div>
       </section>
+
+
       <section className="favorz favorz_1">
+        {/*ITEMS STARTS HERE YOU CAN DUPLICATE THE DIV THAT HAS THE item CLASSNAME */}
         <div className="content">
           <div className="items grid">
             <div className="grid-sizer" />
+            
             <div className="item" data-id={1}>
               <div className="img">
                 <img src="./img/favorz_1.png" alt="" />
@@ -143,18 +147,17 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-{/*ITEMS STARTS HERE YOU CAN DUPLICATE THE DIV THAT HAS THE item CLASSNAME */}
+            <div className="item item_height2 smile " data-id={2}>
+              <div className="img">
+                <img src="./img/favorz_2.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Snag a snack, enjoy a show</p>
+                <p className="big">Apple TV+</p>
+              </div>
+            </div>
 
-            <div className="item item_height2 smile " data-id={1}>
-              <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
-              </div>
-              <div className="text">
-                <p className="small">Snag a snack, enjoy a show</p>
-                <p className="big">Apple TV+</p>
-              </div>
-            </div>
-            <div className="item" data-id={1}>
+            <div className="item" data-id={3}>
               <div className="img">
                 <img src="./img/favorz_3.png" alt="" />
               </div>
@@ -163,87 +166,158 @@ const Party: NextPage = () => {
                 <p className="big">Chili Crisp by Fly by Jing</p>
               </div>
             </div>
-            <div className="item item_height2 no_shadow hide" data-id={1}>
+
+            <div className="item item_height2 no_shadow hide" data-id={4}>
               <div className="img">
                 <img src="./img/favorz_4.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Mindfulness for any mind, any mood, any goal</p>
+                <p className="big">Headspace</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={5}>
               <div className="img">
                 <img src="./img/favorz_5.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">The best audio storytelling, from audio books to podcasts</p>
+                <p className="big">Audible</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={6}>
               <div className="img">
                 <img src="./img/favorz_6.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Play millions of songs ad-free, on-demand, and offline</p>
+                <p className="big">Spotify Premium</p>
+              </div>
             </div>
-            <div className="item item_height2 smile " data-id={1}>
+
+            <div className="item item_height2 smile " data-id={7}>
               <div className="img">
                 <img src="./img/favorz_2.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">Snag a snack, enjoy a show</p>
-                <p className="big">Apple TV+</p>
+                <p className="small">Snag your favorite stuff</p>
+                <p className="big">Amazon.com</p>
               </div>
             </div>
-            <div className="item" data-id={1}>
+
+            <div className="item" data-id={8}>
               <div className="img">
                 <img src="./img/favorz_3.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">You’ll put this on everything 🥟</p>
-                <p className="big">Chili Crisp by Fly by Jing</p>
+                <p className="small">Coffee’s on us (again!) </p>
+                <p className="big">Starbucks</p>
               </div>
             </div>
-            <div className="item item_height2 no_shadow hide" data-id={1}>
+
+            <div className="item item_height2 no_shadow hide" data-id={9}>
               <div className="img">
                 <img src="./img/favorz_4.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Learn about how blockchains work under the hood</p>
+                <p className="big">Dive into crypto with SURGE</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={10}>
               <div className="img">
                 <img src="./img/favorz_5.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">View trending social & market insights on your favorite cryptocurrencies, NFTs, and stocks.</p>
+                <p className="big">LunarCrush</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={11}>
               <div className="img">
                 <img src="./img/favorz_6.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Level-up your flexibility & deeply relax the mind</p>
+                <p className="big">Group yoga class</p>
+              </div>
             </div>
-            <div className="item item_height2 smile " data-id={1}>
+
+            <div className="item item_height2 smile " data-id={12}>
               <div className="img">
                 <img src="./img/favorz_2.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">Snag a snack, enjoy a show</p>
-                <p className="big">Apple TV+</p>
+                <p className="small">Earrings for every mood</p>
+                <p className="big">Studs</p>
               </div>
             </div>
-            <div className="item" data-id={1}>
+
+            <div className="item" data-id={13}>
               <div className="img">
                 <img src="./img/favorz_3.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">You’ll put this on everything 🥟</p>
-                <p className="big">Chili Crisp by Fly by Jing</p>
+                <p className="small">Learn how to cultivate mindfulness & practice meditation</p>
+                <p className="big">Group meditation class</p>
               </div>
             </div>
-            <div className="item item_height2 no_shadow hide" data-id={1}>
+
+            <div className="item item_height2 no_shadow hide" data-id={14}>
               <div className="img">
                 <img src="./img/favorz_4.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Delight you & yours with a movie night</p>
+                <p className="big">Mooooovie night</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={15}>
               <div className="img">
                 <img src="./img/favorz_5.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">A pocket mirror with an important reminder.</p>
+                <p className="big">"You Look Good" from Glossier</p>
+              </div>
             </div>
-            <div className="item no_shadow hide" data-id={1}>
+
+            <div className="item no_shadow hide" data-id={16}>
               <div className="img">
                 <img src="./img/favorz_6.png" alt="" />
               </div>
+              <div className="text">
+                <p className="small">Unlock the Premium experience on Telegram</p>
+                <p className="big">Telegram Premium</p>
+              </div>
             </div>
+
+            <div className="item item_height2 smile " data-id={17}>
+              <div className="img">
+                <img src="./img/favorz_2.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Showcase your favorite assets </p>
+                <p className="big">Custom LED NFT plaque ✨</p>
+              </div>
+            </div>
+
+            <div className="item" data-id={18}>
+              <div className="img">
+                <img src="./img/favorz_3.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Embrace your femininity 💪</p>
+                <p className="big">These Are My Big Girl Pants by Amber Vittoria ✨</p>
+              </div>
+            </div>
+
+
             {/*ITEMS ENDS */}
           </div>
           <a href="#" className="more">
@@ -251,6 +325,8 @@ const Party: NextPage = () => {
           </a>
         </div>
       </section>
+
+
       <section className="welcome welcome_1">
         <div className="line">
           vibe with us!<span>✆</span>vibe with us!<span>✆</span>vibe with us!
@@ -267,9 +343,9 @@ const Party: NextPage = () => {
       <footer>
         <div className="content">
           <div className="links">
-            <a href="#">twitter</a>
-            <a href="#">telegram</a>
-            <a href="#">bb</a>
+            <a href="https://twitter.com/myBBweb3">twitter</a>
+            <a href="https://notionforms.io/forms/telegram">telegram</a>
+            <a href="https://notionforms.io/forms/telegram">bb</a>
           </div>
           <img src="./img/footer_logo.png" alt="" className="logo" />
           <div className="line">
@@ -326,6 +402,8 @@ const Party: NextPage = () => {
 
         </div>
       </div>
+
+
       <div className="pop_up pop_party" data-id={1}>
         <a href="#" className="close" />
         <div className="pop_content">
@@ -352,12 +430,605 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="#" className="claim">
+            <a href="https://notionforms.io/forms/classpass" className="claim">
               claim perk
             </a>
           </div>
         </div>
       </div>
+
+      <div className="pop_up pop_party" data-id={2}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Chili Crisp by Fly by Jing</p>
+            <p className="text">
+            The first & only 100% all-natural Sichuan chili sauce, proudly crafted 
+            in Chengdu. It's hot, spicy, crispy, numbing and deliciously savory. 
+            Intensely flavorful yet not off-the-charts spicy, it’ll make your 
+            food taste bolder and the world around you seem a little bit brighter. 
+            Use it on everything. Yes, even that.
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={3}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Apple TV+</p>
+            <p className="text">
+            Apple TV+ is a streaming service featuring Apple Originals — 
+            \award-winning series, compelling dramas, groundbreaking 
+            documentaries, kids’ entertainment, comedies and more — 
+            with new Apple Originals added every month. We’re treating 
+            you to a month on us. Luv u.
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/apple-tv" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={4}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Headspace</p>
+            <p className="text">
+            Headspace offers guided meditations, courses, and mindfulness 
+            exercises on subjects like stress, general anxiety, worry, 
+            building resilience, and more topics for any moment. 
+            Learn mindfulness and choose from hundreds of meditations 
+            led by world-class experts. We think that’s important – holders 
+            can apply to claim 3 months of good vibes.
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={5}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Audible</p>
+            <p className="text">
+            Listen to books while relaxing by the fire or traveling on the weekends.
+             Audible is storytelling that speaks to you. Audiobooks, podcasts and 
+             Audible Originals await in an all-in-one audio entertainment app. 
+             Get lost in the books and voices that speak most to you and explore 
+             a binge-worthy collection for a month – 100% on us.
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={6}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Spotify Premium</p>
+            <p className="text">
+            Treat yourself to access to millions of songs and other content from 
+            creators all over the world. The best part? With a month of premium 
+            on us, you’ll be able to listen to your favorite artists 
+            uninterrupted – ttyl, ads! (US holders only)
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={7}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Amazon.com </p>
+            <p className="text">
+            Gift yourself (or a loved one) from one of planet Earth’s most 
+            expansive selection of goodies. eGift cards on us, of course. ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={8}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Starbucks</p>
+            <p className="text">
+            More than just great coffee. And because well, duh. ☕️
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={9}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Dive into crypto with SURGE</p>
+            <p className="text">
+            This very gorgeous & snazzy educational course is designed to help 
+            you work in Web3 – you’ll learn about blockchains, Bitcoin & Ethereum, 
+            Web3 architecture, smart contracts, Web3 identity, and everything in 
+            between. Wanna feel like a pro, fast-track your career, and know how 
+            to navigate conversations about crypto? This is for you. 
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={10}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">LunarCrush</p>
+            <p className="text">
+            LunarCrush listens to every drop of crypto information across 
+            social & distills it into digestible data to help you make 
+            informed decisions. We’re gifting folks with level two access 
+            bc you deserve it, fren.
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={11}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Group yoga class</p>
+            <p className="text">
+            Enjoy a 60-minute online yoga class with the BB community! 
+            Yoga improves your balance and flexibility while also alleviating 
+            muscle pain, anxiety, and stress. Let’s face it – we could all use 
+            some of that! Class schedule TBA when class reaches capacity.
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={12}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Studs</p>
+            <p className="text">
+            Make your earscape uniquely you by shopping hoops, studs, cuffs, & more.
+             A shiny new pair (or single!) for your 10/10 gorgeous ear on us. 
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={13}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Group meditation class</p>
+            <p className="text">
+            Meditate with your frens from the BB community – there’s never been a 
+            better time. Enjoy 30 minutes of pure relaxation and bliss on us. 
+            Class schedule TBA when class reaches capacity.
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={14}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Mooooovie night</p>
+            <p className="text">
+            Skip the theater & watch blockbuster movies, binge-worthy TV, hit shows 
+            and more from your living room. We’re treating you to a movie via Prime 
+            Video because we love you.
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={15}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">"You Look Good" from Glossier</p>
+            <p className="text">
+            Because we all need a little boost. A gorg little mirror with a gorg 
+            little message – you’ll find a daily affirmation gracing the front of 
+            this lil gem and a pink acrylic backing. Palm-sized, pocket-sized, 
+            fun-sized, fits-in-your-pink-pouch-sized, whatever you call 
+            it—it’s 3.25” in diameter, cute and easy to take with you. 
+            This cutie comes in a 100% cotton, drawstring pouch to keep 
+            your mirror safe from dust and free-range purse lipstick 
+            (or repurpose it for jewelry and loose change storage).
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={16}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Telegram Premium</p>
+            <p className="text">
+            Telegram Premium is the perfect gift to snag for yourself this holiday 
+            season. Unlock unlimited download speed, thousands of custom emojis, 
+            and more.
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={17}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">Custom LED NFT plaque ✨</p>
+            <p className="text">
+            Doesn’t a customized LED photo plaque sound like the perfect way to 
+            showcase your favorite NFT? We think so, too. Imagine this: a photo 
+            of your favorite NFT is lovingly displayed on a sleek clear acrylic 
+            plaque and backlit for a real m00d. We want one, too.  ✨ This item 
+            is custom, so no product photos are available pre-order.
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={18}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/pop_party_pc.png" className="pc" alt="" />
+            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">These Are My Big Girl Pants by Amber Vittoria ✨</p>
+            <p className="text">
+            From award-winning artist Amber Vittoria comes These Are My Big Girl 
+            Pants, a collection of poetry and artwork that embraces womanhood 
+            and all of its inherent intricacies. Overarching themes of 
+            enlightenment, analysis, and independence speak to young adulthood, 
+            and adulthood in all of its many forms, as each poem and accompanying 
+            piece of art helps women face these emotional and physical changes. 
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+            <iframe style="border:none;width:100%;" height="1100px" src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria">
+              CLAIM PERK
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      
 
       <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} />
 
