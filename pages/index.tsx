@@ -7,37 +7,37 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 const Party: NextPage = () => {
-//   const { connected, wallet, connect, disconnect } = useWallet();
-//   const walletList = useWalletList()
-//   const assets = useAssets()
-//   const [hasPolicyIdAssets, setHasPolicyIdAssets] = useState(false);
-//   const [hasPolicyIdAssetsChecked, setHasPolicyIdAssetsChecked] = useState(false);
-//   const lovelace: any = useLovelace();
+  const { connected, wallet, connect, disconnect } = useWallet();
+  const walletList = useWalletList()
+  const assets = useAssets()
+  const [hasPolicyIdAssets, setHasPolicyIdAssets] = useState(false);
+  const [hasPolicyIdAssetsChecked, setHasPolicyIdAssetsChecked] = useState(false);
+  const lovelace: any = useLovelace();
 
 
-//   useEffect(() => {
-//     const checkPolicyIdAssets = async () => {
-//       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
-//       setHasPolicyIdAssetsChecked(true)
+  useEffect(() => {
+    const checkPolicyIdAssets = async () => {
+      const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
+      setHasPolicyIdAssetsChecked(true)
 
-//       if (!assets.length) {
-//         return disconnect()
-//       }
-//       setHasPolicyIdAssets(true)
-//     }
+      if (!assets.length) {
+        return disconnect()
+      }
+      setHasPolicyIdAssets(true)
+    }
 
-//     if (connected) {
-//       checkPolicyIdAssets()
-//     }
+    if (connected) {
+      checkPolicyIdAssets()
+    }
 
-//   }, [connected])
+  }, [connected])
 
 
-//   const handleDisconnect = () => {
-//     disconnect()
-//     setHasPolicyIdAssetsChecked(false)
-//     setHasPolicyIdAssets(false)
-//   }
+  const handleDisconnect = () => {
+    disconnect()
+    setHasPolicyIdAssetsChecked(false)
+    setHasPolicyIdAssets(false)
+  }
 
   return (
     <div className="page">
@@ -357,7 +357,7 @@ const Party: NextPage = () => {
       </footer>
 
 
-      {/* <div className={`pop_up pop_wallet ${!hasPolicyIdAssets ? 'active' : ''}`} id="myModal" role="dialog">
+      <div className={`pop_up pop_wallet ${!hasPolicyIdAssets ? 'active' : ''}`} id="myModal" role="dialog">
         {/* <a href="#" className="close" /> */}
         <div className="pop_content">
           {!hasPolicyIdAssets ?
@@ -401,7 +401,7 @@ const Party: NextPage = () => {
             )}
 
         </div>
-      </div> */}
+      </div>
 
 
       <div className="pop_up pop_party" data-id={1}>
