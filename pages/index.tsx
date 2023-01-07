@@ -436,9 +436,9 @@ const Party: NextPage = () => {
               claim perk
             </a> */}
 
-            <a href="#popupMap" data-rel="popup" data-position-to="window" class="">Open Map</a>
+            <a href="#popupMap" data-rel="popup" data-position-to="window" className="pop_up pop_party">Open Map</a>
             <div data-role="popup" id="popupMap" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
-              <a href="#" data-rel="back" class="">Close</a>
+              <a href="#" data-rel="back" className="pop_up pop_party">Close</a>
               <iframe src="https://notionforms.io/forms/classpass" width="480" height="320" seamless=""></iframe>
             </div>
 
