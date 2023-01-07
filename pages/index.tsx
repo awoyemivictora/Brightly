@@ -431,7 +431,7 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            </iframe src="http://www.bing.com</div></div>"></iframe>
+            <iframe src="http://www.bing.com">
             <a href="https://notionforms.io/forms/classpass" className="claim">
               claim perk
             </a>
