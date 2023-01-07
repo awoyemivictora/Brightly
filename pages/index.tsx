@@ -148,7 +148,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 smile " data-id={2}>
+            <div className="item item_height2 smile " data-id={6}>
               <div className="img">
                 <img src="./img/fly_by_jing_scc_macro_edit.jpeg" alt="" />
               </div>
@@ -188,7 +188,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item no_shadow hide" data-id={6}>
+            <div className="item no_shadow hide" data-id={2}>
               <div className="img">
                 <img src="./img/hero-image copy.jpg" alt="" />
               </div>
@@ -438,7 +438,7 @@ const Party: NextPage = () => {
         </div>
       </div>
 
-      <div className="pop_up pop_party" data-id={2}>
+      <div className="pop_up pop_party" data-id={6}>
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
@@ -581,7 +581,7 @@ const Party: NextPage = () => {
         </div>
       </div>
 
-      <div className="pop_up pop_party" data-id={6}>
+      <div className="pop_up pop_party" data-id={2}>
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
