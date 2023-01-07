@@ -123,7 +123,7 @@ const Party: NextPage = () => {
       <section className="party_page">
         <div className="content">
           <div className="left">
-            <h2>Party Favorz ✨</h2>
+            <h1>Party Favorz ✨</h1>
           </div>
           <div className="right">
             <p>BB main collection holders have exclusive access to super cool gifts. 🎁</p>
@@ -346,7 +346,7 @@ const Party: NextPage = () => {
           <div className="links">
             <a href="https://twitter.com/myBBweb3">twitter</a>
             <a href="https://notionforms.io/forms/telegram">telegram</a>
-            <a href="https://notionforms.io/forms/telegram">bb</a>
+            <a href="https://bestandbrightest.xyz/">bb</a>
           </div>
           <img src="./img/footer_logo.png" alt="" className="logo" />
           <div className="line">
@@ -431,6 +431,7 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
+            </iframe src="http://www.bing.com</div></div>"></iframe>
             <a href="https://notionforms.io/forms/classpass" className="claim">
               claim perk
             </a>
