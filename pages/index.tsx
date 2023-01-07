@@ -150,21 +150,21 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 smile " data-id={2}>
               <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
-              </div>
-              <div className="text">
-                <p className="small">Snag a snack, enjoy a show</p>
-                <p className="big">Apple TV+</p>
-              </div>
-            </div>
-
-            <div className="item" data-id={3}>
-              <div className="img">
                 <img src="./img/fly_by_jing_scc_macro_edit.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">You’ll put this on everything 🥟</p>
                 <p className="big">Chili Crisp by Fly by Jing</p>
+              </div>
+            </div>
+
+            <div className="item" data-id={3}>
+              <div className="img">
+                <img src="./img/favorz_2.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">Snag a snack, enjoy a show</p>
+                <p className="big">Apple TV+</p>
               </div>
             </div>
 
@@ -512,8 +512,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/headspace_pc.png" className="pc" alt="" />
+            <img src="./img/headspace_mobile.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Headspace</p>
