@@ -67,23 +67,23 @@ const Party: NextPage = () => {
                 <a href="https://brightly.community/">about</a>
               </li>
               <li>
-                <a href="https://twitter.com/myBBweb3" className="active">
-                  party favorz ✨
+                <a href=".page/html" className="active">
+                  party favorz 
                 </a>
               </li>
             </ul>
           </div>
           <div className="right">
-            <a href="#">The Pledge</a>
+            <a href="https://www.notion.so/8bc082bd6d4c4b99add39a5ef078df95">✨the pledge ✨</a>
 
           </div>
           <div className="header_logo">
-            <a href="#">
+            <a href="https://brightly.community/">
               <img src="./img/header_logo.png" alt="" />
             </a>
           </div>
           <div className="mobile_nav">
-            <a href="#" />
+            <a href="https://brightly.community/" />
           </div>
         </div>
       </header>
@@ -94,19 +94,19 @@ const Party: NextPage = () => {
               <a href="./index.html#interviews">Interviews</a>
             </li>
             <li>
-              <a href="./index.html#nft">NFTs 101</a>
+              <a href="https://brightly.community/#nft">NFTs 101</a>
             </li>
             <li>
-              <a href="./index.html#about">about</a>
+              <a href="https://brightly.community/#interviews">about</a>
             </li>
             <li>
               <a href="./page.html">Party favorz</a>
             </li>
           </ul>
           <div className="links">
-            <a href="#">twitter</a>
-            <a href="#">telegram</a>
-            <a href="#">bb</a>
+            <a href="https://twitter.com/myBBweb3">twitter</a>
+            <a href="https://notionforms.io/forms/telegram">telegram</a>
+            <a href="https://bestandbrightest.xyz/">bb</a>
           </div>
         </div>
         <section className="welcome welcome_1">
@@ -123,7 +123,7 @@ const Party: NextPage = () => {
       <section className="party_page">
         <div className="content">
           <div className="left">
-            <h1>Party Favorz ✨</h1>
+            <h2>Party Favorz ✨</h2>
           </div>
           <div className="right">
             <p>BB main collection holders have exclusive access to super cool gifts. 🎁</p>
@@ -350,9 +350,9 @@ const Party: NextPage = () => {
           </div>
           <img src="./img/footer_logo.png" alt="" className="logo" />
           <div className="line">
-            <a href="#">Privacy Policy</a>
+            <a href="https://www.notion.so/PRIVACY-POLICY-87724f26b05842f2957b783a1043cbac">Privacy Policy</a>
             <p>© 2022 Brightly. All Rights Reserved</p>
-            <a href="#">Terms and Conditions</a>
+            <a href="https://big-file-6cd.notion.site/TERMS-AND-CONDITIONS-7813e6aee816433e88d8ce7a6fa2a554">Terms and Conditions</a>
           </div>
         </div>
       </footer>
