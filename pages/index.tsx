@@ -26,9 +26,9 @@ const Party: NextPage = () => {
       setHasPolicyIdAssets(true)
     }
 
-    if (connected) {
-      checkPolicyIdAssets()
-    }
+    // if (connected) {
+    //   checkPolicyIdAssets()
+    // }
 
   }, [connected])
 
@@ -357,7 +357,7 @@ const Party: NextPage = () => {
       </footer>
 
 
-      {/* <div className={`pop_up pop_wallet ${!hasPolicyIdAssets ? 'active' : ''}`} id="myModal" role="dialog">
+      <div className={`pop_up pop_wallet ${!hasPolicyIdAssets ? 'active' : ''}`} id="myModal" role="dialog">
         {/* <a href="#" className="close" /> */}
         <div className="pop_content">
           {!hasPolicyIdAssets ?
@@ -401,7 +401,7 @@ const Party: NextPage = () => {
             )}
 
         </div>
-      </div> */}
+      </div>
 
 
       <div className="pop_up pop_party" data-id={1}>
@@ -1035,7 +1035,7 @@ const Party: NextPage = () => {
 
       
 
-      {/* <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} /> */}
+      <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} />
 
       <div id="like_button_container" />
       <div className="pop_up pop_interview" data-id={1}>
