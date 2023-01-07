@@ -431,18 +431,11 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            {/* <iframe src="https://notionforms.io/forms/classpass" name="iframe1" height="610px" width="100%"></iframe>
+            <iframe src="https://notionforms.io/forms/classpass" name="iframe1" height="610px" width="100%" bordaer="none"></iframe>
             <a href="https://notionforms.io/forms/classpass" target="iframe1" className="claim">
               claim perk
-            </a> */}
-
-            <a href="#popupMap" data-rel="popup" data-position-to="window" className="pop_up pop_party">Open Map</a>
-            <div data-role="popup" id="popupMap" data-overlay-theme="a" data-theme="a" data-corners="false" data-tolerance="15,15">
-              <a href="#" data-rel="back" className="pop_up pop_party">Close</a>
-              <iframe src="https://notionforms.io/forms/classpass" width="480" height="320" seamless=""></iframe>
-            </div>
-
-
+            </a>
+            
           </div>
         </div>
       </div>
