@@ -160,7 +160,7 @@ const Party: NextPage = () => {
 
             <div className="item" data-id={3}>
               <div className="img">
-                <img src="./img/favorz_3.png" alt="" />
+                <img src="./img/fly_by_jing_scc_macro_edit.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">You’ll put this on everything 🥟</p>
@@ -170,7 +170,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 no_shadow hide" data-id={4}>
               <div className="img">
-                <img src="./img/favorz_4.png" alt="" />
+                <img src="./img/headspace.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Mindfulness for any mind, any mood, any goal</p>
@@ -180,7 +180,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={5}>
               <div className="img">
-                <img src="./img/favorz_5.png" alt="" />
+                <img src="./img/audible.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">The best audio storytelling, from audio books to podcasts</p>
@@ -190,7 +190,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={6}>
               <div className="img">
-                <img src="./img/favorz_6.png" alt="" />
+                <img src="./img/hero-image copy.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Play millions of songs ad-free, on-demand, and offline</p>
@@ -200,7 +200,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 smile " data-id={7}>
               <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
+                <img src="./img/amazon.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Snag your favorite stuff</p>
@@ -210,7 +210,7 @@ const Party: NextPage = () => {
 
             <div className="item" data-id={8}>
               <div className="img">
-                <img src="./img/favorz_3.png" alt="" />
+                <img src="./img/576bee69910584e73c8cad7c.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Coffee’s on us (again!) </p>
@@ -220,7 +220,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 no_shadow hide" data-id={9}>
               <div className="img">
-                <img src="./img/favorz_4.png" alt="" />
+                <img src="./img/surge.png" alt="" />
               </div>
               <div className="text">
                 <p className="small">Learn about how blockchains work under the hood</p>
@@ -230,7 +230,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={10}>
               <div className="img">
-                <img src="./img/favorz_5.png" alt="" />
+                <img src="./img/lunarcrush.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">View trending social & market insights on your favorite cryptocurrencies, NFTs, and stocks.</p>
@@ -240,7 +240,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={11}>
               <div className="img">
-                <img src="./img/favorz_6.png" alt="" />
+                <img src="./img/gradient-yoga-poses-collection_52683-84551 copy.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Level-up your flexibility & deeply relax the mind</p>
@@ -250,7 +250,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 smile " data-id={12}>
               <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
+                <img src="./img/studs.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Earrings for every mood</p>
@@ -260,7 +260,7 @@ const Party: NextPage = () => {
 
             <div className="item" data-id={13}>
               <div className="img">
-                <img src="./img/favorz_3.png" alt="" />
+                <img src="./img/meditate.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Learn how to cultivate mindfulness & practice meditation</p>
@@ -270,7 +270,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 no_shadow hide" data-id={14}>
               <div className="img">
-                <img src="./img/favorz_4.png" alt="" />
+                <img src="./img/aced8efdc065ee1b6bbefdfab970ac8f.png" alt="" />
               </div>
               <div className="text">
                 <p className="small">Delight you & yours with a movie night</p>
@@ -280,7 +280,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={15}>
               <div className="img">
-                <img src="./img/favorz_5.png" alt="" />
+                <img src="./img/glossier.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">A pocket mirror with an important reminder.</p>
@@ -290,7 +290,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={16}>
               <div className="img">
-                <img src="./img/favorz_6.png" alt="" />
+                <img src="./img/telegram.jpeg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Unlock the Premium experience on Telegram</p>
@@ -300,7 +300,7 @@ const Party: NextPage = () => {
 
             <div className="item item_height2 smile " data-id={17}>
               <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
+                <img src="./img/https___hypebeast.com_image_2022_03_exclusive-doodles-sxsw-merch-vinyl-figure-allrightsreserved-sk-lam-nft-collection-1.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Showcase your favorite assets </p>
@@ -310,7 +310,7 @@ const Party: NextPage = () => {
 
             <div className="item" data-id={18}>
               <div className="img">
-                <img src="./img/favorz_3.png" alt="" />
+                <img src="./img/amber.png" alt="" />
               </div>
               <div className="text">
                 <p className="small">Embrace your femininity 💪</p>
