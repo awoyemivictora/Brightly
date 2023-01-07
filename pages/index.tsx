@@ -477,8 +477,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/apple_pc.png" className="pc" alt="" />
+            <img src="./img/apple_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Apple TV+</p>
