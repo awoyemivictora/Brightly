@@ -1728,7 +1728,7 @@ header .right a:hover {
     font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 115%;
     letter-spacing: -0.02em;
     color: #ffffff;
@@ -1915,7 +1915,7 @@ footer .line p {
     font-family: "Helvetica";
     font-style: italic;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 32px;
     line-height: 132%;
     color: #131415;
 }
