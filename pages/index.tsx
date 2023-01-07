@@ -434,9 +434,10 @@ const Party: NextPage = () => {
             <iframe 
             src="https://notionforms.io/forms/classpass" 
             name="iframe1"
-            title="CLAIM PERK" name="iframe1" 
+            title="CLAIM PERK"
             height="610px" 
             width="100%"></iframe>
+
             <a href="https://notionforms.io/forms/classpass" 
             target="iframe1" 
             className="claim">
