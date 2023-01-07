@@ -67,8 +67,8 @@ const Party: NextPage = () => {
                 <a href="https://brightly.community/">about</a>
               </li>
               <li>
-                <a href="./page.html" className="active">
-                  party favorz
+                <a href="https://twitter.com/myBBweb3" className="active">
+                  party favorz ✨
                 </a>
               </li>
             </ul>
@@ -123,10 +123,10 @@ const Party: NextPage = () => {
       <section className="party_page">
         <div className="content">
           <div className="left">
-            <h1>Party Favorz</h1>
+            <h1>Party Favorz ✨</h1>
           </div>
           <div className="right">
-            <p>Become BB holders and get exclusive access to cool gifts.</p>
+            <p>BB main collection holders have exclusive access to super cool gifts. 🎁</p>
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ const Party: NextPage = () => {
 
             <div className="item" data-id={3}>
               <div className="img">
-                <img src="./img/favorz_2.png" alt="" />
+                <img src="./img/tv.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Snag a snack, enjoy a show</p>
@@ -170,7 +170,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={4}>
               <div className="img">
-                <img src="./img/headspace.jpeg" alt="" />
+                <img src="./img/headspace_2.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Mindfulness for any mind, any mood, any goal</p>
@@ -230,7 +230,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={10}>
               <div className="img">
-                <img src="./img/lunarcrush.jpg" alt="" />
+                <img src="./img/lunarcrash_1.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">View trending social & market insights on your favorite cryptocurrencies, NFTs, and stocks.</p>
@@ -308,7 +308,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item" data-id={18}>
+            <div className="item item_height2 smile " data-id={18}>
               <div className="img">
                 <img src="./img/amber.png" alt="" />
               </div>
@@ -477,8 +477,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/favorz_2.png" className="pc" alt="" />
-            <img src="./img/favorz_2.png" className="mobile" alt="" />
+            <img src="./img/tv.jpg" className="pc" alt="" />
+            <img src="./img/tv.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Apple TV+</p>
@@ -512,8 +512,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/headspace.jpeg" className="pc" alt="" />
-            <img src="./img/headspace.jpeg" className="mobile" alt="" />
+            <img src="./img/headspace_2.jpg" className="pc" alt="" />
+            <img src="./img/headspace_2.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Headspace</p>
@@ -620,8 +620,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/amazon.jpeg" className="pc" alt="" />
-            <img src="./img/amazon.jpeg" className="mobile" alt="" />
+            <img src="./img/amazon_2.jpg" className="pc" alt="" />
+            <img src="./img/amazon_2.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Amazon.com </p>
@@ -719,8 +719,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/lunarcrush.jpg" className="pc" alt="" />
-            <img src="./img/lunarcrush.jpg" className="mobile" alt="" />
+            <img src="./img/lunarcrash_1.jpg" className="pc" alt="" />
+            <img src="./img/lunarcrash_1.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">LunarCrush</p>
@@ -854,8 +854,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/aced8efdc065ee1b6bbefdfab970ac8f.png" className="pc" alt="" />
-            <img src="./img/aced8efdc065ee1b6bbefdfab970ac8f.png" className="mobile" alt="" />
+            <img src="./img/prime_video_2.jpg" className="pc" alt="" />
+            <img src="./img/prime_video_2.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Mooooovie night</p>
