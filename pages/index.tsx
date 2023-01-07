@@ -442,8 +442,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/chilli_pc.png" className="pc" alt="" />
+            <img src="./img/chilli_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Chili Crisp by Fly by Jing</p>
@@ -512,8 +512,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/headspace_pc.png" className="pc" alt="" />
-            <img src="./img/headspace_mobile.jpg" className="mobile" alt="" />
+            <img src="./img/headache_pc.png" className="pc" alt="" />
+            <img src="./img/headache_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Headspace</p>
@@ -549,8 +549,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/audible_pc.png" className="pc" alt="" />
+            <img src="./img/audible_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Audible</p>
@@ -585,8 +585,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/spotify_pc.png" className="pc" alt="" />
+            <img src="./img/spotify_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Spotify Premium</p>
@@ -620,8 +620,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/amazon_pc.png" className="pc" alt="" />
+            <img src="./img/amazon_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Amazon.com </p>
@@ -653,8 +653,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/starbucks_pc.png" className="pc" alt="" />
+            <img src="./img/studs_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Starbucks</p>
@@ -684,8 +684,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/surge_pc.png" className="pc" alt="" />
+            <img src="./img/surge_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Dive into crypto with SURGE</p>
@@ -719,8 +719,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/lunarcrash_pc.png" className="pc" alt="" />
+            <img src="./img/lunarcrash_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">LunarCrush</p>
@@ -753,8 +753,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/yoga_pc.png" className="pc" alt="" />
+            <img src="./img/yoga_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Group yoga class</p>
@@ -788,8 +788,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/studs_pc.png" className="pc" alt="" />
+            <img src="./img/studs_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Studs</p>
@@ -821,8 +821,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/meditation_pc.png" className="pc" alt="" />
+            <img src="./img/meditation_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Group meditation class</p>
@@ -854,8 +854,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/movie_pc.png" className="pc" alt="" />
+            <img src="./img/movie_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Mooooovie night</p>
@@ -888,8 +888,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/glossier_pc.png" className="pc" alt="" />
+            <img src="./img/glossier_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">"You Look Good" from Glossier</p>
@@ -927,8 +927,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/telegram_pc.png" className="pc" alt="" />
+            <img src="./img/telegram_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Telegram Premium</p>
@@ -960,8 +960,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/nft_pc.png" className="pc" alt="" />
+            <img src="./img/nft_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Custom LED NFT plaque ✨</p>
@@ -996,8 +996,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/pop_party_pc.png" className="pc" alt="" />
-            <img src="./img/pop_party_mobile.png" className="mobile" alt="" />
+            <img src="./img/amber_pc.png" className="pc" alt="" />
+            <img src="./img/amber_mobile.png" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">These Are My Big Girl Pants by Amber Vittoria ✨</p>
