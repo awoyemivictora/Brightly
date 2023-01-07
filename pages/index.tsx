@@ -198,7 +198,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 smile " data-id={7}>
+            <div className="item no_shadow hide" data-id={7}>
               <div className="img">
                 <img src="./img/amazon.jpeg" alt="" />
               </div>
@@ -268,7 +268,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 no_shadow hide" data-id={14}>
+            <div className="item no_shadow hide" data-id={14}>
               <div className="img">
                 <img src="./img/aced8efdc065ee1b6bbefdfab970ac8f.png" alt="" />
               </div>
