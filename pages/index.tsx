@@ -19,6 +19,7 @@ const Party: NextPage = () => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
       setHasPolicyIdAssetsChecked(true)
+      setHasPolicyIdAssets(true)
 
       if (!assets.length) {
         return disconnect()
@@ -26,9 +27,9 @@ const Party: NextPage = () => {
       setHasPolicyIdAssets(true)
     }
 
-    // if (connected) {
-    //   checkPolicyIdAssets()
-    // }
+    if (connected) {
+      checkPolicyIdAssets()
+    }
 
   }, [connected])
 
