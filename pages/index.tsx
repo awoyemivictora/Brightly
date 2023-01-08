@@ -440,7 +440,7 @@ const Party: NextPage = () => {
             height="610px" 
             width="100%"></iframe> */}
 
-            <a href="./iframe.html" 
+            <a href=".././iframe.html" 
             // target="iframe1" 
             className="claim">
               claim perk
