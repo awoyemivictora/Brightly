@@ -465,7 +465,7 @@ const Party: NextPage = () => {
                 {/* <a className="close" href="#">
                   ×
                 </a> */}
-                <a href="#" className="close" />
+                <a href="#" className="pop_up pop_party" />
                 <div className="content">
                   <iframe
                     style={{ border: "none", width: "100%" }}
