@@ -468,11 +468,11 @@ const Party: NextPage = () => {
         <div id="popup1" className="overlay">
           <div className="popup">
             <a className="close" href="#" onClick={() => setIsVisible(false)}>
-              &times;
+              {/* &times; */}
             </a>
             <div className="content">
               <iframe
-                style={{ border: "none", width: "100%" }}
+                style={{ border: "none", width: "100%", height: "610px" }}
                 height="610px"
                 src="https://notionforms.io/forms/classpass"
               />
