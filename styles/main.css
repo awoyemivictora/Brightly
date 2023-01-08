@@ -1974,6 +1974,7 @@ footer .line p {
     height: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .pop_party .pop_content .left {
@@ -2089,6 +2090,7 @@ footer .line p {
     line-height: 114%;
     text-transform: uppercase;
     color: #131415;
+    cursor:pointer;
 }
 
 .pop_wallet {

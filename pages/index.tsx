@@ -320,6 +320,36 @@ const Party: NextPage = () => {
               </div>
             </div>
 
+            <div className="item item_height2 smile " data-id={19}>
+              <div className="img">
+                <img src="./img/favorz_4.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">more goodies soon!</p>
+                <p className="big">Coming SOON ✨</p>
+              </div>
+            </div>
+
+            <div className="item no_shadow hide" data-id={20}>
+              <div className="img">
+                <img src="./img/favorz_5.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">more goodies soon!</p>
+                <p className="big">coming SOON ✨</p>
+              </div>
+            </div>
+
+            <div className="item no_shadow hide" data-id={21}>
+              <div className="img">
+                <img src="./img/favorz_6.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small">more goodies soon!</p>
+                <p className="big">coming SOON ✨</p>
+              </div>
+            </div>
+
 
             {/*ITEMS ENDS */}
           </div>
@@ -435,35 +465,21 @@ const Party: NextPage = () => {
             </div>
             
             
-            {/* <iframe 
-            src="https://notionforms.io/forms/classpass" 
-            name="iframe1"
-            title="CLAIM PERK"
-            height="610px" 
-            width="100%"></iframe>
-
-            <a href="#" 
-            target="iframe1" 
-            className="claim">
-              claim perk
-            </a> */}
-            
          
-            <div className="box">
-<button className="i-popup claim" onClick={() => setIsVisible(true)}>
-        CLAIM PERK
-</button>
-</div>
 
-
+<a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
 
     <div className="box">
       {isVisible && (
         <div id="popup1" className="overlay">
           <div className="popup">
-            <a className="close" href="#" onClick={() => setIsVisible(false)}>
-              {/* &times; */}
-            </a>
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
             <div className="content">
               <iframe
                 style={{ border: "none", width: "100%", height: "610px" }}
@@ -509,9 +525,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
+
+            
           </div>
         </div>
       </div>
@@ -544,9 +584,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/apple-tv" className="claim">
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/apple-tv"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
+            
           </div>
         </div>
       </div>
@@ -581,9 +645,34 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "680px" }}
+                height="610px"
+                src="https://notionforms.io/forms/headspace-yzs"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
+
+
           </div>
         </div>
       </div>
@@ -617,9 +706,34 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/audiblexyy"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -652,9 +766,34 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "680px" }}
+                height="610px"
+                src="https://notionforms.io/forms/spotify-premium-us"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -685,9 +824,34 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/amazoncom-jjc"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -716,9 +880,34 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "680px" }}
+                height="610px"
+                src="https://notionforms.io/forms/starbucks-gift-card-sbg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -751,9 +940,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/crypto-web3-course"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -785,9 +998,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/lunarcrush-membership"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -820,9 +1057,31 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "540px" }}
+                height="610px"
+                src="https://notionforms.io/forms/online-group-yoga-class"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -853,9 +1112,32 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/studs-earrings"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -886,9 +1168,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "540px" }}
+                height="610px"
+                src="https://notionforms.io/forms/online-group-meditation-class"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -920,9 +1226,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "610px" }}
+                height="610px"
+                src="https://notionforms.io/forms/amazon-movie-night"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -959,9 +1289,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1110px" }}
+                height="610px"
+                src="https://notionforms.io/forms/glossier-you-look-good-mirror"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -992,9 +1346,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "540px" }}
+                height="610px"
+                src="https://notionforms.io/forms/telegram-premium-y2k"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -1028,9 +1406,33 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
-            <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+            
+            
+            <a className="claim" onClick={() => setIsVisible(true)}>
               claim perk
             </a>
+
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/personalized-nft-photo"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
           </div>
         </div>
       </div>
@@ -1066,9 +1468,204 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <iframe src="demo_iframe.htm" name="iframe_a" height="1100px" width="100%" title="Iframe Example"></iframe>
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
 
-            <p><a href="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria" target="iframe_a">CLAIM PERK</a></p>
+    <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={19}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/favorz_4.png" className="pc" alt="" />
+            <img src="./img/favorz_4.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">COMING SOON! ✨</p>
+            <p className="text">
+            COMING SOON! ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
+
+    {/* <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div> */}
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={20}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/favorz_5.png" className="pc" alt="" />
+            <img src="./img/favorz_5.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">COMING SOON! ✨</p>
+            <p className="text">
+            COMING SOON! ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
+
+    {/* <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div> */}
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={21}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/favorz_6.png" className="pc" alt="" />
+            <img src="./img/favorz_6.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">COMING SOON! ✨</p>
+            <p className="text">
+            COMING SOON! ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
+
+    {/* <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div> */}
 
 
 
