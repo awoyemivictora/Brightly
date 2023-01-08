@@ -432,7 +432,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="line_right" style="width:50%; height:50%; background-color:orange;">
+            <div className="line_right" scrolling:yes>
             <iframe 
             src="https://notionforms.io/forms/classpass" 
             name="iframe1"
