@@ -462,9 +462,17 @@ const Party: NextPage = () => {
             <div id="popup1" className="overlay">
               <div className="popup">
                 {/* <h2>BRIGHTLY</h2> */}
-                <a className="close" href="#">
+                {/* <a className="close" href="#">
                   close
-                </a>
+                </a> */}
+                <script type="text/javascript">
+        $(document).mouseup(function (e) {
+            if ($(e.target).closest(".container").length
+                        === 0) {
+                $(".container").hide();
+            }
+        });
+    </script>
                 <a href="#" className="close" />
                 <div className="content">
                   <iframe
@@ -1424,6 +1432,9 @@ const Party: NextPage = () => {
       </div>
 
       <Script src="./js/main.js"></Script>
+      <Script src=
+        "https://code.jquery.com/jquery-3.4.0.min.js">
+    </Script>
       {
         hasPolicyIdAssets && <Script src="./js/connected.js"></Script>
       }
