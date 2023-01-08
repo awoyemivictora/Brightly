@@ -461,7 +461,7 @@ const Party: NextPage = () => {
   </div>
   <div id="popup1" className="overlay">
     <div className="popup">
-      <h2>Here i am</h2>
+      <h2>BRIGHTLY</h2>
       <a className="close" href="#">
         ×
       </a>

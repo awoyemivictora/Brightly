@@ -2759,7 +2759,7 @@ header .nav ul li a.active {
         font-family: Tahoma, Arial, sans-serif;
         }
         .popup .close {
-        position: absolute;
+        position: relative;
         top: 20px;
         right: 30px;
         transition: all 200ms;
@@ -2769,7 +2769,7 @@ header .nav ul li a.active {
         color: #333;
         }
         .popup .close:hover {
-        color: #06D85F;
+        color: #000000;
         }
         .popup .content {
         max-height: 30%;
