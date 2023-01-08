@@ -21,7 +21,7 @@ const Party: NextPage = () => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
       setHasPolicyIdAssetsChecked(true)
-      // setHasPolicyIdAssets(true)
+      setHasPolicyIdAssets(true)
 
       if (!assets.length) {
         return disconnect()
@@ -60,13 +60,13 @@ const Party: NextPage = () => {
           <div className="nav">
             <ul>
               <li>
-                <a href="https://brightly.community/">Interviews</a>
+                <a href="https://brightly.community/#interviews">Interviews</a>
               </li>
               <li>
-                <a href="https://brightly.community/">NFTs 101</a>
+                <a href="https://brightly.community/#nft">NFTs 101</a>
               </li>
               <li>
-                <a href="https://brightly.community/">about</a>
+                <a href="https://brightly.community/#about">about</a>
               </li>
               <li>
                 <a href=".page/html" className="active">
@@ -210,7 +210,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item" data-id={8}>
+            <div className="item item_height2 smile " data-id={8}>
               <div className="img">
                 <img src="./img/576bee69910584e73c8cad7c.jpeg" alt="" />
               </div>
@@ -290,7 +290,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item no_shadow hide" data-id={16}>
+            <div className="item" data-id={16}>
               <div className="img">
                 <img src="./img/telegram.jpeg" alt="" />
               </div>
@@ -300,7 +300,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 smile " data-id={17}>
+            <div className="item no_shadow hide" data-id={17}>
               <div className="img">
                 <img src="./img/https___hypebeast.com_image_2022_03_exclusive-doodles-sxsw-merch-vinyl-figure-allrightsreserved-sk-lam-nft-collection-1.jpg" alt="" />
               </div>
@@ -310,7 +310,7 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 smile " data-id={18}>
+            <div className="item no_shadow hide" data-id={18}>
               <div className="img">
                 <img src="./img/amber.png" alt="" />
               </div>
@@ -353,6 +353,16 @@ const Party: NextPage = () => {
             <div className="item no_shadow hide" data-id={22}>
               <div className="img">
                 <img src="./img/favorz_4.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small"> </p>
+                <p className="big"> </p>
+              </div>
+            </div>
+
+            <div className="item no_shadow hide" data-id={20}>
+              <div className="img">
+                <img src="./img/favorz_5.png" alt="" />
               </div>
               <div className="text">
                 <p className="small"> </p>
@@ -1702,6 +1712,64 @@ const Party: NextPage = () => {
             <div className="line">
               <div className="line_left">
                 <img src="./img/favorz_4.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
+
+    {/* <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div> */}
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={20}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/favorz_5.png" className="pc" alt="" />
+            <img src="./img/favorz_5.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">COMING SOON! ✨</p>
+            <p className="text">
+            COMING SOON! ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/perk.png" alt="" />
               </div>
               <div className="line_right">
                 <p>
