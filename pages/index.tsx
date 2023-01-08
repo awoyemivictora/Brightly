@@ -44,17 +44,7 @@ const Party: NextPage = () => {
 
   return (
     <div className="page">
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Brightly</title>
-        <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-        <script defer src="/js/jquery.min.js"></script>
-        <script defer src="/js/jquery.marquee.min.js"></script>
-        <script defer src="/js/masonry.pkgd.min.js"></script>
-        <script defer src="/js/owl.carousel.min.js"></script>
-      </Head>
+     
       <header>
         <div className="content">
           <div className="nav">
