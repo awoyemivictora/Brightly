@@ -1870,7 +1870,7 @@ const Party: NextPage = () => {
                   women-designed NFTs.
                 </p>
                 <p className="b_text">
-                  External <a href="#">link</a> to the pledge
+                  External <a href="https://www.notion.so/8bc082bd6d4c4b99add39a5ef078df95">link</a> to the pledge
                 </p>
               </div>
               <div className="item">
