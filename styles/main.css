@@ -2032,6 +2032,7 @@ footer .line p {
     margin-bottom: 16px;
     text-transform: uppercase;
     color: #131415;
+    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line {
