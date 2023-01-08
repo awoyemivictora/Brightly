@@ -544,7 +544,7 @@ const Party: NextPage = () => {
         <div id="popup1" className="overlay">
           <div className="popup">
             
-            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+            <a className="close_hover" href="#" onClick={() => setIsVisible(false)}>
                   ×
                 </a>
                 

@@ -2755,7 +2755,7 @@ header .nav ul li a.active {
         }
 
         .popup .close:hover {
-            color: red;
+            color: white;
         }
 
         .popup .content {
