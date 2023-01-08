@@ -452,8 +452,8 @@ const Party: NextPage = () => {
  
             //-----------------------popup button------------\\
 
-<button className="i-popup" onClick={() => setIsVisible(true)}>
-        Let me Pop up
+<button className="claim" onClick={() => setIsVisible(true)}>
+        CLAIM PERK
 </button>
 
 
