@@ -432,32 +432,19 @@ const Party: NextPage = () => {
               </div>
             </div>
             
-                                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-                    <script type="text/javascript">
-                    $(function(){
-                        $('#button').click(function(){ 
-                            if(!$('#iframe').length) {
-                                    $('#iframeHolder').html('<iframe id="iframe" src="https://notionforms.io/forms/classpass" width="700" height="450"></iframe>');
-                            }
-                        });   
-                    });
-                    </script>
-                    
-                    <button id="button">Button</button>
-                    <div id="iframeHolder"></div>
             
             {/* <iframe 
             src="https://notionforms.io/forms/classpass" 
             name="iframe1"
             title="CLAIM PERK"
             height="610px" 
-            width="100%"></iframe>
+            width="100%"></iframe> */}
 
-            <a href="https://notionforms.io/forms/classpass" 
-            target="iframe1" 
+            <a href="./iframe.html" 
+            // target="iframe1" 
             className="claim">
               claim perk
-            </a> */}
+            </a>
             
            
             
