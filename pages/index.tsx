@@ -448,7 +448,7 @@ const Party: NextPage = () => {
             
          
  
-            {/* <style
+          {/**   <style
               dangerouslySetInnerHTML={{
                 __html:
                   "\n        body {\n        font-family: Arial, sans-serif;\n        background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;\n        background-size: cover;\n        height: 100vh;\n        }\n\n        h1 {\n        text-align: center;\n        font-family: Tahoma, Arial, sans-serif;\n        color: #06D85F;\n        margin: 80px 0;\n        }\n\n        .box {\n        width: 40%;\n        margin: 0 auto;\n        background: rgba(255,255,255,0.2);\n        padding: 35px;\n        border: 2px solid #fff;\n        border-radius: 20px/50px;\n        background-clip: padding-box;\n        text-align: center;\n        }\n\n        .button {\n        font-size: 1em;\n        padding: 10px;\n        color: #fff;\n        border: 2px solid #06D85F;\n        border-radius: 20px/50px;\n        text-decoration: none;\n        cursor: pointer;\n        transition: all 0.3s ease-out;\n        }\n        .button:hover {\n        background: #06D85F;\n        }\n\n        .overlay {\n        position: fixed;\n        top: 0;\n        bottom: 0;\n        left: 0;\n        right: 0;\n        background: rgba(0, 0, 0, 0.7);\n        transition: opacity 500ms;\n        visibility: hidden;\n        opacity: 0;\n        }\n        .overlay:target {\n        visibility: visible;\n        opacity: 1;\n        }\n\n        .popup {\n        margin: 70px auto;\n        padding: 20px;\n        background: #fff;\n        border-radius: 5px;\n        width: 30%;\n        position: relative;\n        transition: all 5s ease-in-out;\n        }\n\n        .popup h2 {\n        margin-top: 0;\n        color: #333;\n        font-family: Tahoma, Arial, sans-serif;\n        }\n        .popup .close {\n        position: absolute;\n        top: 20px;\n        right: 30px;\n        transition: all 200ms;\n        font-size: 30px;\n        font-weight: bold;\n        text-decoration: none;\n        color: #333;\n        }\n        .popup .close:hover {\n        color: #06D85F;\n        }\n        .popup .content {\n        max-height: 30%;\n        overflow: auto;\n        }\n\n        @media screen and (max-width: 700px){\n        .box{\n        width: 70%;\n        }\n        .popup{\n        width: 70%;\n        }\n        }\n    "
@@ -461,8 +461,8 @@ const Party: NextPage = () => {
             </div>
             <div id="popup1" className="overlay">
               <div className="popup">
-                {/* <h2>BRIGHTLY</h2> */}
-                {/* <a className="close" href="#">
+                 <h2>BRIGHTLY</h2> }
+                 <a className="close" href="#">
                   ×
                 </a>
                 <a href="#" className="close" />
@@ -474,8 +474,9 @@ const Party: NextPage = () => {
                   />
                 </div>
               </div>
-            </div> */} */
-
+            </div>
+          
+            */}
 
                           <style
                   dangerouslySetInnerHTML={{
@@ -483,7 +484,7 @@ const Party: NextPage = () => {
                       "\n        body {\n            font-family: Arial, sans-serif;\n            background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;\n            background-size: cover;\n            height: 100vh;\n        }\n\n        h1 {\n            text-align: center;\n            font-family: Tahoma, Arial, sans-serif;\n            color: #06D85F;\n            margin: 80px 0;\n        }\n\n        .box {\n            width: 40%;\n            margin: 0 auto;\n            background: rgba(255, 255, 255, 0.2);\n            padding: 35px;\n            border: 2px solid #fff;\n            border-radius: 20px/50px;\n            background-clip: padding-box;\n            text-align: center;\n        }\n\n        .i-popup {\n            font-size: 1em;\n            padding: 10px;\n            color: #fff;\n            border: 2px solid #06D85F;\n            border-radius: 20px/50px;\n            text-decoration: none;\n            cursor: pointer;\n            transition: all 0.3s ease-out;\n        }\n\n        .i-popup:hover {\n            background: #06D85F;\n        }\n\n        .overlay {\n            position: fixed;\n            top: 0;\n            bottom: 0;\n            left: 0;\n            right: 0;\n            background: rgba(0, 0, 0, 0.7);\n\n            visibility: hidden;\n\n        }\n\n        .popup {\n            margin: 70px auto;\n            padding: 20px;\n            background: none;\n            border-radius: 5px;\n            width: 30%;\n            position: relative;\n\n        }\n\n        .popup iframe {\n            border-radius: 15px;\n        }\n\n        .popup .close {\n            position: absolute;\n            top: 15px;\n            right: 44px;\n            font-size: 41px;\n            font-weight: bold;\n            text-decoration: none;\n            color: #fff;\n        }\n\n        .popup .close:hover {\n            color: red;\n        }\n\n        .popup .content {\n            max-height: 30%;\n            overflow: auto;\n        }\n\n        @media screen and (max-width: 700px) {\n            .box {\n                width: 70%;\n            }\n\n            .popup {\n                width: 70%;\n            }\n        }\n    "
                   }}
                 />
-                <h1>Popup/Modal </h1>
+                {/* <h1>Popup/Modal </h1> */}
                 {/* <div className="box">
                   <I-popup className="i-popup ">Let me Pop up</I-popup>
                 </div> */}
