@@ -425,14 +425,13 @@ const Party: NextPage = () => {
               <div className="line_left">
                 <img src="./img/perk.png" alt="" />
               </div>
-              <div className="line_right">
+              <div className="line_right" style="overflow-y:scroll;">
                 <p>
                   Own 1 x BB <a href="#">main collection</a>
                 </p>
               </div>
             </div>
 
-            <div className="line_right" style="overflow-y:scroll;">
             <iframe 
             src="https://notionforms.io/forms/classpass" 
             name="iframe1"
@@ -446,7 +445,7 @@ const Party: NextPage = () => {
               claim perk
             </a>
             
-            </div>
+           
             
           </div>
         </div>
