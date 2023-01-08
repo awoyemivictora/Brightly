@@ -448,20 +448,13 @@ const Party: NextPage = () => {
               claim perk
             </a> */}
             
-         
- 
-            //-----------------------popup button------------\\
             <div className="box">
 <button className="claim" onClick={() => setIsVisible(true)}>
-        CLAIM PERK
+        <center>CLAIM PERK</center>
 </button>
 </div>
 
 
-
-
-
-//-----------------------Iframe popup box------------\\
 
     <div className="box">
       {isVisible && (
@@ -482,6 +475,9 @@ const Party: NextPage = () => {
       )}
     </div>
 
+    <a href="https://notionforms.io/forms/chili-crisp-by-fly-by-jing-xyz" className="claim">
+              claim perk
+            </a>
             
           </div>
         </div>
