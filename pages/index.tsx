@@ -320,13 +320,13 @@ const Party: NextPage = () => {
               </div>
             </div>
 
-            <div className="item item_height2 smile " data-id={19}>
+            <div className="item no_shadow hide" data-id={19}>
               <div className="img">
                 <img src="./img/favorz_4.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">more goodies soon!</p>
-                <p className="big">Coming SOON ✨</p>
+                <p className="small"> </p>
+                <p className="big"></p>
               </div>
             </div>
 
@@ -335,8 +335,8 @@ const Party: NextPage = () => {
                 <img src="./img/favorz_5.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">more goodies soon!</p>
-                <p className="big">coming SOON ✨</p>
+                <p className="small"> </p>
+                <p className="big"> </p>
               </div>
             </div>
 
@@ -345,8 +345,18 @@ const Party: NextPage = () => {
                 <img src="./img/favorz_6.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">more goodies soon!</p>
-                <p className="big">coming SOON ✨</p>
+                <p className="small"> </p>
+                <p className="big"> </p>
+              </div>
+            </div>
+
+            <div className="item no_shadow hide" data-id={22}>
+              <div className="img">
+                <img src="./img/favorz_4.png" alt="" />
+              </div>
+              <div className="text">
+                <p className="small"> </p>
+                <p className="big"> </p>
               </div>
             </div>
 
@@ -1634,6 +1644,64 @@ const Party: NextPage = () => {
             <div className="line">
               <div className="line_left">
                 <img src="./img/perk.png" alt="" />
+              </div>
+              <div className="line_right">
+                <p>
+                  Own 1 x BB <a href="#">main collection</a>
+                </p>
+              </div>
+            </div>
+
+            <a className="claim" onClick={() => setIsVisible(true)}>
+              claim perk
+            </a>
+
+    {/* <div className="box">
+      {isVisible && (
+        <div id="popup1" className="overlay">
+          <div className="popup">
+            
+            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
+                  ×
+                </a>
+                
+            <div className="content">
+              <iframe
+                style={{ border: "none", width: "100%", height: "1100px" }}
+                height="610px"
+                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </div> */}
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="pop_up pop_party" data-id={21}>
+        <a href="#" className="close" />
+        <div className="pop_content">
+          <div className="left">
+            <img src="./img/favorz_4.png" className="pc" alt="" />
+            <img src="./img/favorz_4.png" className="mobile" alt="" />
+          </div>
+          <div className="right">
+            <p className="name">COMING SOON! ✨</p>
+            <p className="text">
+            COMING SOON! ✨
+
+
+            </p>
+            <p className="p_name">perk eligibility</p>
+            <div className="line">
+              <div className="line_left">
+                <img src="./img/favorz_4.png" alt="" />
               </div>
               <div className="line_right">
                 <p>
