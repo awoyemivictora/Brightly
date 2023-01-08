@@ -431,6 +431,8 @@ const Party: NextPage = () => {
                 </p>
               </div>
             </div>
+
+            <div id="Divi" style="width:50%; height:50%; background-color:orange;">
             <iframe 
             src="https://notionforms.io/forms/classpass" 
             name="iframe1"
@@ -443,6 +445,8 @@ const Party: NextPage = () => {
             className="claim">
               claim perk
             </a>
+            
+            </div>
             
           </div>
         </div>
