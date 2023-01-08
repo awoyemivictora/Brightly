@@ -2021,7 +2021,6 @@ footer .line p {
     color: #131415;
     border-bottom: 1px solid #131415;
     margin-bottom: 32px;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .p_name {
@@ -2039,19 +2038,16 @@ footer .line p {
 .pop_party .pop_content .right .line {
     display: flex;
     margin-bottom: 32px;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line .line_left {
     width: 40px;
     height: 40px;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line .line_left img {
     display: block;
     width: 100%;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line .line_right {
@@ -2060,7 +2056,6 @@ footer .line p {
     justify-content: center;
     flex-direction: column;
     padding: 0 16px;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line .line_right p {
@@ -2070,7 +2065,6 @@ footer .line p {
     font-size: 18px;
     line-height: 154%;
     color: #131415;
-    overflow-y: auto;
 }
 
 .pop_party .pop_content .right .line .line_right p a {
@@ -2095,7 +2089,6 @@ footer .line p {
     line-height: 114%;
     text-transform: uppercase;
     color: #131415;
-    overflow-y: auto;
 }
 
 .pop_wallet {
@@ -2727,6 +2720,7 @@ header .nav ul li a.active {
 
         .popup iframe {
             border-radius: 15px;
+            height: 600px !important;
         }
 
         .popup .close {
