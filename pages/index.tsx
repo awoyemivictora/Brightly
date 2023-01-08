@@ -484,9 +484,9 @@ const Party: NextPage = () => {
                   }}
                 />
                 <h1>Popup/Modal </h1>
-                <div className="box">
-                  <i-popup className="i-popup ">Let me Pop up</i-popup>
-                </div>
+                {/* <div className="box">
+                  <I-popup className="i-popup ">Let me Pop up</I-popup>
+                </div> */}
                 <div id="popup1" className="overlay">
                   <div className="popup">
                     <a className="close" href="#">
