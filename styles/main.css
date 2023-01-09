@@ -1763,7 +1763,7 @@ header .right a:hover {
     color: #ffffff;
 }
 
-.favorz .items .item.smile::before {
+/* .favorz .items .item.smile::before {
     content: "";
     background: url(/img/party_smile.svg);
     width: 200px;
@@ -1772,7 +1772,7 @@ header .right a:hover {
     top: -129px;
     right: 149px;
     z-index: 1;
-}
+} */
 
 .favorz .items .item.smile::after {
     content: "";

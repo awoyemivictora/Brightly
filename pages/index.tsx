@@ -21,7 +21,7 @@ const Party: NextPage = () => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
       setHasPolicyIdAssetsChecked(true)
-      // setHasPolicyIdAssets(true)
+      setHasPolicyIdAssets(true)
 
       if (!assets.length) {
         return disconnect()
@@ -222,7 +222,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={10}>
               <div className="img">
-                <img src="./img/lunarcrash_1.jpg" alt="" />
+                <img src="./img/lunarcrush_2.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">View trending social & market insights on your favorite cryptocurrencies, NFTs, and stocks.</p>
@@ -570,8 +570,8 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/tv.jpg" className="pc" alt="" />
-            <img src="./img/tv.jpg" className="mobile" alt="" />
+            <img src="./img/apple_tv_3.jpg" className="pc" alt="" />
+            <img src="./img/apple_tv_3.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
             <p className="name">Apple TV+</p>
