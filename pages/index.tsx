@@ -1,10 +1,11 @@
 import "../styles/Home.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { NextPage } from "next";
 import { useWallet, useWalletList, useAssets, useLovelace } from '@meshsdk/react';
 import React from 'react';
 import Head from 'next/head'
 import Script from 'next/script'
+
 
 const Party: NextPage = () => {
   const { connected, wallet, connect, disconnect } = useWallet();
@@ -16,12 +17,11 @@ const Party: NextPage = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-
   useEffect(() => {
     const checkPolicyIdAssets = async () => {
       const assets = await wallet.getPolicyIdAssets('c117f33edeee4b531dfdb85ead5753433c9dbd875629bc971013ffac');
       setHasPolicyIdAssetsChecked(true)
-      // setHasPolicyIdAssets(true)
+      setHasPolicyIdAssets(true)
 
       if (!assets.length) {
         return disconnect()
@@ -66,7 +66,7 @@ const Party: NextPage = () => {
             </ul>
           </div>
           <div className="left">
-            <a href="https://www.notion.so/8bc082bd6d4c4b99add39a5ef078df95">✨the pledge ✨</a>
+            <a href="https://www.notion.so/8bc082bd6d4c4b99add39a5ef078df95">✨ the pledge ✨</a>
 
           </div>
           <div className="header_logo">
@@ -265,7 +265,7 @@ const Party: NextPage = () => {
                 <img src="./img/aced8efdc065ee1b6bbefdfab970ac8f.png" alt="" />
               </div>
               <div className="text">
-                <p className="small">Delight you & yours with a movie night</p>
+                <p className="small">Sit back, relax, and grab some popcorn</p>
                 <p className="big">Mooooovie night</p>
               </div>
             </div>
@@ -275,7 +275,7 @@ const Party: NextPage = () => {
                 <img src="./img/glossier.jpeg" alt="" />
               </div>
               <div className="text">
-                <p className="small">A pocket mirror with an important reminder.</p>
+                <p className="small">A pocket mirror with an important reminder</p>
                 <p className="big">"You Look Good" from Glossier</p>
               </div>
             </div>
@@ -302,7 +302,7 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={18}>
               <div className="img">
-                <img src="./img/amber.png" alt="" />
+                <img src="./img/amber_2.jpg" alt="" />
               </div>
               <div className="text">
                 <p className="small">Embrace your femininity 💪</p>
@@ -312,11 +312,11 @@ const Party: NextPage = () => {
 
             <div className="item no_shadow hide" data-id={19}>
               <div className="img">
-                <img src="./img/favorz_4.png" alt="" />
+                <img src="./img/coming_soon_1.jpg" alt="" />
               </div>
               <div className="text">
-                <p className="small"> </p>
-                <p className="big"></p>
+                <p className="small">A wallet essential from our web3 fave 💕</p>
+                <p className="big">Notes to Self by Miss NFT 🌈</p>
               </div>
             </div>
 
@@ -483,7 +483,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -541,7 +541,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="close_hover" href="#" onClick={() => setIsVisible(false)}>
@@ -577,7 +577,7 @@ const Party: NextPage = () => {
             <p className="name">Apple TV+</p>
             <p className="text">
             Apple TV+ is a streaming service featuring Apple Originals — 
-            \award-winning series, compelling dramas, groundbreaking 
+            award-winning series, compelling dramas, groundbreaking 
             documentaries, kids’ entertainment, comedies and more — 
             with new Apple Originals added every month. We’re treating 
             you to a month on us. Luv u.
@@ -601,7 +601,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -662,7 +662,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -725,7 +725,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -785,7 +785,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -843,7 +843,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -899,7 +899,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -958,7 +958,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1016,7 +1016,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1073,7 +1073,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1129,7 +1129,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1186,7 +1186,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1244,7 +1244,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1307,7 +1307,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1364,7 +1364,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1424,7 +1424,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1484,7 +1484,7 @@ const Party: NextPage = () => {
 
     <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1514,13 +1514,21 @@ const Party: NextPage = () => {
         <a href="#" className="close" />
         <div className="pop_content">
           <div className="left">
-            <img src="./img/favorz_4.png" className="pc" alt="" />
-            <img src="./img/favorz_4.png" className="mobile" alt="" />
+            <img src="./img/coming_soon_2.jpg" className="pc" alt="" />
+            <img src="./img/coming_soon_2.jpg" className="mobile" alt="" />
           </div>
           <div className="right">
-            <p className="name">COMING SOON! ✨</p>
+            <p className="name">Notes to Self by Miss NFT 🌈</p>
             <p className="text">
-            COMING SOON! ✨
+            A very uplifting and very essential limited collection of hand-drawn 
+            pieces by friend, mentor, daily inspo, and web3 powerhouse Miss 
+            NFT. Inspired by her own journey through postpartum and 
+            entrepreneurship, this collection focuses on spreading 
+            positivity & motivation through 365 NFTs filled with 
+            inspiring quotes, good vibes, and personal reminders 
+            to love yourself and stay positive. Sounds like a wallet 
+            essential to us. 💕✨This mints on Jan 13th – we’ll be 
+            there doing our very best to snag some for you!  
 
 
             </p>
@@ -1540,9 +1548,9 @@ const Party: NextPage = () => {
               claim perk
             </a>
 
-    {/* <div className="box">
+    <div className="box">
       {isVisible && (
-        <div id="popup1" className="overlay">
+        <div id="popup1" className="overlay" onClick={() => setIsVisible(false)}>
           <div className="popup">
             
             <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
@@ -1551,15 +1559,15 @@ const Party: NextPage = () => {
                 
             <div className="content">
               <iframe
-                style={{ border: "none", width: "100%", height: "1100px" }}
+                style={{ border: "none", width: "100%", height: "680px" }}
                 height="610px"
-                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
+                src="https://notionforms.io/forms/notes-to-self"
               />
             </div>
           </div>
         </div>
       )}
-    </div> */}
+    </div>
 
 
 
@@ -1568,238 +1576,7 @@ const Party: NextPage = () => {
         </div>
       </div>
 
-      <div className="pop_up pop_party" data-id={20}>
-        <a href="#" className="close" />
-        <div className="pop_content">
-          <div className="left">
-            <img src="./img/favorz_5.png" className="pc" alt="" />
-            <img src="./img/favorz_5.png" className="mobile" alt="" />
-          </div>
-          <div className="right">
-            <p className="name">COMING SOON! ✨</p>
-            <p className="text">
-            COMING SOON! ✨
-
-
-            </p>
-            <p className="p_name">perk eligibility</p>
-            <div className="line">
-              <div className="line_left">
-                <img src="./img/perk.png" alt="" />
-              </div>
-              <div className="line_right">
-                <p>
-                  Own 1 x BB <a href="#">main collection</a>
-                </p>
-              </div>
-            </div>
-
-            <a className="claim" onClick={() => setIsVisible(true)}>
-              claim perk
-            </a>
-
-    {/* <div className="box">
-      {isVisible && (
-        <div id="popup1" className="overlay">
-          <div className="popup">
-            
-            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
-                  ×
-                </a>
-                
-            <div className="content">
-              <iframe
-                style={{ border: "none", width: "100%", height: "1100px" }}
-                height="610px"
-                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-    </div> */}
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-      <div className="pop_up pop_party" data-id={21}>
-        <a href="#" className="close" />
-        <div className="pop_content">
-          <div className="left">
-            <img src="./img/favorz_6.png" className="pc" alt="" />
-            <img src="./img/favorz_6.png" className="mobile" alt="" />
-          </div>
-          <div className="right">
-            <p className="name">COMING SOON! ✨</p>
-            <p className="text">
-            COMING SOON! ✨
-
-
-            </p>
-            <p className="p_name">perk eligibility</p>
-            <div className="line">
-              <div className="line_left">
-                <img src="./img/perk.png" alt="" />
-              </div>
-              <div className="line_right">
-                <p>
-                  Own 1 x BB <a href="#">main collection</a>
-                </p>
-              </div>
-            </div>
-
-            <a className="claim" onClick={() => setIsVisible(true)}>
-              claim perk
-            </a>
-
-    {/* <div className="box">
-      {isVisible && (
-        <div id="popup1" className="overlay">
-          <div className="popup">
-            
-            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
-                  ×
-                </a>
-                
-            <div className="content">
-              <iframe
-                style={{ border: "none", width: "100%", height: "1100px" }}
-                height="610px"
-                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-    </div> */}
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-      <div className="pop_up pop_party" data-id={21}>
-        <a href="#" className="close" />
-        <div className="pop_content">
-          <div className="left">
-            <img src="./img/favorz_4.png" className="pc" alt="" />
-            <img src="./img/favorz_4.png" className="mobile" alt="" />
-          </div>
-          <div className="right">
-            <p className="name">COMING SOON! ✨</p>
-            <p className="text">
-            COMING SOON! ✨
-
-
-            </p>
-            <p className="p_name">perk eligibility</p>
-            <div className="line">
-              <div className="line_left">
-                <img src="./img/favorz_4.png" alt="" />
-              </div>
-              <div className="line_right">
-                <p>
-                  Own 1 x BB <a href="#">main collection</a>
-                </p>
-              </div>
-            </div>
-
-            <a className="claim" onClick={() => setIsVisible(true)}>
-              claim perk
-            </a>
-
-    {/* <div className="box">
-      {isVisible && (
-        <div id="popup1" className="overlay">
-          <div className="popup">
-            
-            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
-                  ×
-                </a>
-                
-            <div className="content">
-              <iframe
-                style={{ border: "none", width: "100%", height: "1100px" }}
-                height="610px"
-                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-    </div> */}
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-      <div className="pop_up pop_party" data-id={20}>
-        <a href="#" className="close" />
-        <div className="pop_content">
-          <div className="left">
-            <img src="./img/favorz_5.png" className="pc" alt="" />
-            <img src="./img/favorz_5.png" className="mobile" alt="" />
-          </div>
-          <div className="right">
-            <p className="name">COMING SOON! ✨</p>
-            <p className="text">
-            COMING SOON! ✨
-
-
-            </p>
-            <p className="p_name">perk eligibility</p>
-            <div className="line">
-              <div className="line_left">
-                <img src="./img/perk.png" alt="" />
-              </div>
-              <div className="line_right">
-                <p>
-                  Own 1 x BB <a href="#">main collection</a>
-                </p>
-              </div>
-            </div>
-
-            <a className="claim" onClick={() => setIsVisible(true)}>
-              claim perk
-            </a>
-
-    {/* <div className="box">
-      {isVisible && (
-        <div id="popup1" className="overlay">
-          <div className="popup">
-            
-            <a className="pop_content" href="#" onClick={() => setIsVisible(false)}>
-                  ×
-                </a>
-                
-            <div className="content">
-              <iframe
-                style={{ border: "none", width: "100%", height: "1100px" }}
-                height="610px"
-                src="https://notionforms.io/forms/these-are-my-big-girl-pants-by-amber-vittoria"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-    </div> */}
-
-
-
-
-          </div>
-        </div>
-      </div>
-
+     
       
 
       <div className={`pop_up_bg ${!hasPolicyIdAssets ? 'active' : ''}`} />
