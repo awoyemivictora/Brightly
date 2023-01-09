@@ -7,15 +7,6 @@ import { MeshProvider } from "@meshsdk/react";
 import Head from 'next/head'
 
 
-import dynamic from "next/dynamic";
-
-const Scroll = dynamic(
-  () => {
-    return import("./_document");
-  },
-  { ssr: false }
-);
-
 
 
 if (typeof window !== "undefined") {
@@ -25,7 +16,7 @@ document.addEventListener("contextmenu", function(e) {
 });
 
 document.onkeydown = function(e) {
-  if (event.keyCode == 123) {
+  if (e.keyCode == 123) {
     return false;
   }
 
