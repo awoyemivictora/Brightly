@@ -1763,20 +1763,23 @@ header .right a:hover {
     color: #ffffff;
 }
 
-/* .favorz .items .item.smile::before {
+.favorz .items .item.smile::before {
     content: "";
     background: url(/img/party_smile.svg);
+    background-size: 100px;
+    background-repeat: no-repeat;
     width: 200px;
     height: 201px;
     position: absolute;
-    top: -129px;
-    right: 149px;
+    top: -80px;
+    right: 30px;
     z-index: 1;
-} */
+}
 
 .favorz .items .item.smile::after {
     content: "";
     background: url(/img/party_star.svg);
+    background-size: 100px;
     width: 99px;
     height: 99px;
     right: -33px;
